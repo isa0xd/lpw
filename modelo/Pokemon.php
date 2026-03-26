@@ -1,10 +1,14 @@
 <?php
 
 class Pokemon {
-    public $nome;
-    public $tipo;
-    public $hp;
-    public $link;
+    private $nome;
+    private $tipo;
+    private $hp;
+    private $link;
+
+     public function __construct($nome) {
+        $this->nome = $nome;
+    }
 
     /**
      * Get the value of nome
